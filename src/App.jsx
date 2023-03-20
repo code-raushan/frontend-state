@@ -7,6 +7,10 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import LoginRegisterHandler from "./components/LoginRegisterHandler";
 import PrivateRoutes from "./components/PrivateRoute";
+import axios from "axios";
+
+axios.defaults.headers.common["Accept"] =
+  "application/json, text/plain, */*, text/html";
 
 function App() {
   return <div className="">Helw</div>;

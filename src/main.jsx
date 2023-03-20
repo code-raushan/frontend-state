@@ -19,6 +19,11 @@ import Register from "./pages/Register";
 import PrivateRoutes from "./components/PrivateRoute";
 import Dashboard from "./pages/Dashboard";
 
+import axios from "axios";
+
+axios.defaults.headers.common["Accept"] =
+  "application/json, text/plain, */*, text/html";
+
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<Main />} />,
